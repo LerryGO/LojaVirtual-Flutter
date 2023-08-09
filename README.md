@@ -1,16 +1,17 @@
-# loja_virtual
+# Loja Virtual com Flutter
 
-A new Flutter project.
+![lojavirtual](https://github.com/LerryGO/LojaVirtual-Flutter/assets/56898536/2b801cee-82e2-49f3-ac14-ded4ba821f8e)
 
-## Getting Started
+App completo de loja virtual!
 
-This project is a starting point for a Flutter application.
+Ações:
+ - Logar e criar conta de usuário
+ - Listar produtos com preço
+ - adicionar ao carrinho produtos
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Baseado no curso de Flutter
+
+Curso feito por Daniel Ciolfi
+Disponível na Udemy
