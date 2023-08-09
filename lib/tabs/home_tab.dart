@@ -1,4 +1,3 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -56,11 +55,8 @@ class HomeTab extends StatelessWidget {
                     crossAxisSpacing: 1.0,
                     staggeredTiles: snapshot.data!.docs.map(
                       (doc) {
-                      
-                      return StaggeredTile.count(
-                        doc["x"].toInt(), doc["y"].toDouble()
-                      
-                        );
+                        return StaggeredTile.count(
+                            doc["x"].toInt(), doc["y"].toDouble());
                       },
                     ).toList(),
                     children: snapshot.data!.docs.map(

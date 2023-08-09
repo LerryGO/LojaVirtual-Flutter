@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:loja_virtual/models/user_model.dart';
 import 'package:loja_virtual/screens/signup_screen.dart';
@@ -67,6 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         .hasMatch(_emailController.text)) {
                       return 'Por favor, digite um e-mail correto';
                     }
+                    return null;
                   },
                 ),
                 SizedBox(height: 16),
@@ -77,6 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   validator: (senha) {
                     if (senha!.isEmpty || senha.length < 6)
                       return "Senha Inválida";
+                    return null;
                   },
                 ),
                 Align(

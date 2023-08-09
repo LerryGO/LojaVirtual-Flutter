@@ -18,8 +18,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   final _addressController = TextEditingController();
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,6 +45,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       if (nome!.isEmpty) {
                         return 'Nome inválido';
                       }
+                      return null;
                     },
                   ),
                   SizedBox(
@@ -64,6 +63,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           .hasMatch(_emailController.text)) {
                         return 'Por favor, digite um e-mail correto';
                       }
+                      return null;
                     },
                   ),
                   SizedBox(height: 16),
@@ -74,6 +74,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     validator: (senha) {
                       if (senha!.isEmpty || senha.length < 6)
                         return "Senha Inválida";
+                      return null;
                     },
                   ),
                   SizedBox(height: 16),
@@ -82,6 +83,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     controller: _addressController,
                     validator: (endereco) {
                       if (endereco!.isEmpty) return "Endereço Inválido";
+                      return null;
                     },
                   ),
                   SizedBox(
